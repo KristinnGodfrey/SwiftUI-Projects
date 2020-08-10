@@ -1,5 +1,7 @@
 # WeSplit
-![p1](p1.png)
+<p align="left">
+  <img src="/p1.png" width="30%" /> 
+</p>
 
-## First Swift project
-This is my first swift project
+## Project details
+This is my first Swift project
