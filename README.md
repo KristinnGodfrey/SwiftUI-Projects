@@ -3,7 +3,7 @@
 ## Project details
 This is my first Swift project.
 
-The code can be found in [ContentView.swift](https://github.com/KristinnGodfrey/WeSplit/blob/master/README.md)
+The code can be found in [ContentView.swift](https://github.com/KristinnGodfrey/WeSplit/blob/master/WeSplit/ContentView.swift)
 
 ## Simulator
 <p align="left">
