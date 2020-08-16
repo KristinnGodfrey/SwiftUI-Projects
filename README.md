@@ -1,6 +1,6 @@
 # GuessTheFlag
 ## Project Details
-This is my second Swift project, code can be found in [ContentView.swift](https://github.com/KristinnGodfrey/WeSplit/blob/master/GuessTheFlag/ContentView.swift
+This is my third Swift project, code can be found in [ContentView.swift](https://github.com/KristinnGodfrey/WeSplit/blob/master/GuessTheFlag/ContentView.swift
 
 ## Simulator
 <p align="left">
