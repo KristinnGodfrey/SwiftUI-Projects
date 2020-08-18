@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var numberOfPeople = ""
     @State private var tipPercentage = 2
     let tipPercentages = [10, 15, 20, 25, 0]
+    @State private var tipZero = true
     
     var originalAmount: Double {
         let tipSelection = Double(tipPercentages[tipPercentage])
@@ -29,6 +30,8 @@ struct ContentView: View {
 
         return amountPerPerson
     }
+    
+    
     var body: some View {
         NavigationView {
             Form {
@@ -43,11 +46,13 @@ struct ContentView: View {
                     Picker("Tip percentage", selection: $tipPercentage) {
                         ForEach(0 ..< tipPercentages.count) {
                             Text("\(self.tipPercentages[$0])%")
+                                
                         }
                     }.pickerStyle(SegmentedPickerStyle())
                 }
                 Section(header: Text("Total amount:")) {
                     Text("$\(originalAmount, specifier: "%.2f")")
+                        .foregroundColor(self.tipPercentage == 4 ? Color.red : Color.black )
                 }
                 Section(header: Text("Total per person:")) {
                     Text("$\(totalPerPerson, specifier: "%.2f")")
