@@ -8,6 +8,16 @@
 
 import SwiftUI
 
+extension Image {
+    func FlagStyle() -> some View  {
+        self
+            .renderingMode(.original)
+            .clipShape(Capsule())
+            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
+            .shadow(color: .black, radius: 2)
+    }
+}
+
 struct ContentView: View {
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
@@ -37,10 +47,7 @@ struct ContentView: View {
                         self.flagTapped(number)
                     }) {
                         Image(self.countries[number])
-                            .renderingMode(.original)
-                            .clipShape(Capsule())
-                            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
-                            .shadow(color: .black, radius: 2)
+                            .FlagStyle()
                     }
                 }
                 Text("Score: \(userScore)")
@@ -71,10 +78,13 @@ struct ContentView: View {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }
-}
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
 }
