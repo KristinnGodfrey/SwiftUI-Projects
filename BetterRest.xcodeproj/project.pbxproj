@@ -13,6 +13,7 @@
 		5D64A67024F2A2B000BC9582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D64A66F24F2A2B000BC9582 /* Assets.xcassets */; };
 		5D64A67324F2A2B000BC9582 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D64A67224F2A2B000BC9582 /* Preview Assets.xcassets */; };
 		5D64A67624F2A2B000BC9582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D64A67424F2A2B000BC9582 /* LaunchScreen.storyboard */; };
+		5D64A67E24F334E600BC9582 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5D64A67D24F334E600BC9582 /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5D64A67224F2A2B000BC9582 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5D64A67524F2A2B000BC9582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D64A67724F2A2B000BC9582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D64A67D24F334E600BC9582 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				5D64A66F24F2A2B000BC9582 /* Assets.xcassets */,
 				5D64A67424F2A2B000BC9582 /* LaunchScreen.storyboard */,
 				5D64A67724F2A2B000BC9582 /* Info.plist */,
+				5D64A67D24F334E600BC9582 /* SleepCalculator.mlmodel */,
 				5D64A67124F2A2B000BC9582 /* Preview Content */,
 			);
 			path = BetterRest;
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D64A66A24F2A2AF00BC9582 /* AppDelegate.swift in Sources */,
+				5D64A67E24F334E600BC9582 /* SleepCalculator.mlmodel in Sources */,
 				5D64A66C24F2A2AF00BC9582 /* SceneDelegate.swift in Sources */,
 				5D64A66E24F2A2AF00BC9582 /* ContentView.swift in Sources */,
 			);
