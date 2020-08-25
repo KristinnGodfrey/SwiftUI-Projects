@@ -1,7 +1,7 @@
 # Conversion
 
 ## Project Details
-This is my fifth Swift project, code can be found in [ContentView.swift](https://github.com/KristinnGodfrey/Conversion/blob/master/Challenge%20Day/ContentView.swift)
+This is my fifth Swift project, code can be found in [ContentView.swift](https://github.com/KristinnGodfrey/BetterRest/blob/master/BetterRest/ContentView.swift)
 
 ## Simulator
 <p align="left">
