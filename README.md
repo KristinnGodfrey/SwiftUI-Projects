@@ -17,8 +17,10 @@ This is my sixth Swift project, code can be found in [ContentView.swift](https:/
   <img src="/p2.png" width="30%" /> 
   <img src="/p3.png" width="30%" /> 
 </p>
+
 - [x] Add a left bar button item that calls startGame(), so users can restart with a new word whenever they want to.
 - [x] Put a text view below the List so you can track and show the player’s score for a given root word. How you calculate score is down to you, but something involving number of words and their letter count would be reasonable.
+
 <p align="left">
   <img src="/p4.png" width="30%" /> 
 </p>
