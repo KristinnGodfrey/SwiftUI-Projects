@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var errorTitle = ""
     @State private var errorMessage = ""
     @State private var showingError = false
+    @State private var playerScore = 0
 
 
     var body: some View {
@@ -25,11 +26,16 @@ struct ContentView: View {
                     .autocapitalization(.none)
                     .padding()
 
-
+                Button ("Restart game") {
+                    self.startGame()
+                }
                 List(usedWords, id: \.self) {
                     Image(systemName: "\($0.count).circle")
                     Text($0)
                 }
+                
+                Text("Score: \(playerScore)")
+
             }
             .navigationBarTitle(rootWord)
             .onAppear(perform: startGame)
@@ -67,6 +73,17 @@ struct ContentView: View {
         guard answer.count > 0 else {
             return
         }
+        
+        guard isStartWord(word: answer ) else {
+            wordError(title: "Word is same as startword", message: "That's weak")
+            return
+        }
+        
+        guard isTooShort  (word: answer) else {
+            wordError(title: "Word is too short", message: "Be more feisty")
+            return
+        }
+
 
         guard isOriginal(word: answer) else {
             wordError(title: "Word used already", message: "Be more original")
@@ -82,6 +99,7 @@ struct ContentView: View {
             wordError(title: "Word not possible", message: "That isn't a real word.")
             return
         }
+        playerScore += 1 
 
         usedWords.insert(answer, at: 0)
         newWord = ""
@@ -102,12 +120,26 @@ struct ContentView: View {
 
         return true
     }
+    func isStartWord(word: String) -> Bool {
+        if word == rootWord {
+            return false
+        }
+        return true
+    }
+    func isTooShort(word: String) -> Bool {
+        if word.count < 3 {
+            return false
+        }
+        return true
+    }
     func isReal(word: String) -> Bool {
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
-
+        
         return misspelledRange.location == NSNotFound
+        
+
     }
     func wordError(title: String, message: String) {
         errorTitle = title
