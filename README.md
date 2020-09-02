@@ -16,3 +16,6 @@ This is my third Swift project, code can be found in [ContentView.swift](https:/
 - [x] When you tap the correct flag, make it spin around 360 degrees on the Y axis.
 - [x] Make the other two buttons fade out to 25% opacity.
 - [ ] And if you tap on the wrong flag? Well, that’s down to you – get creative!
+<p align="left">
+  <img src="/p4.png" width="30%" /> 
+</p>
