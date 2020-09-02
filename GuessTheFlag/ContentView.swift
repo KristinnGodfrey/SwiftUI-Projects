@@ -25,6 +25,9 @@ struct ContentView: View {
     @State private var scoreTitle = ""
     @State private var scoreText = ""
     @State private var userScore = 0
+    @State private var animationAmount = 0.0
+    @State private var opacityAmount = 1.0
+
     
     var body: some View {
         ZStack {
@@ -39,16 +42,20 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .fontWeight(.black)
                         .foregroundColor(.white)
+                        
                     
                 }
                 
                 ForEach(0 ..< 3) { number in
                     Button(action: {
                         self.flagTapped(number)
+                        self.opacityAmount = 0.25
                     }) {
                         Image(self.countries[number])
                             .FlagStyle()
                     }
+                    .opacity(number == self.correctAnswer  ? 1 : self.opacityAmount)
+                    .rotation3DEffect(.degrees(number == self.correctAnswer ? self.animationAmount : 0), axis: (x: 0, y: 1, z: 0))
                 }
                 Text("Score: \(userScore)")
                 Spacer()
@@ -63,10 +70,17 @@ struct ContentView: View {
         }
     }
     func flagTapped(_ number: Int) {
+        
     if number == correctAnswer {
-            scoreTitle = "Correct"
-            scoreText = "Good job"
-            userScore += 1
+        scoreTitle = "Correct"
+        scoreText = "Good job"
+        userScore += 1
+        
+
+        withAnimation(.interpolatingSpring(stiffness: 20, damping: 5)) {
+            self.animationAmount += 360
+        }
+        
         } else {
             scoreTitle = "Wrong"
         scoreText = "The flag you pressed is \(countries[number])"
@@ -77,6 +91,9 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        withAnimation(.easeInOut) {
+            self.opacityAmount = 1.0
+        }
     }
 
 

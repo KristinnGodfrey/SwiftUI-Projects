@@ -13,3 +13,6 @@ This is my third Swift project, code can be found in [ContentView.swift](https:/
 
 ## Extra
 - [x] create a FlagImage() view that renders one flag image using the specific set of modifiers we had.
+- [x] When you tap the correct flag, make it spin around 360 degrees on the Y axis.
+- [x] Make the other two buttons fade out to 25% opacity.
+- [ ] And if you tap on the wrong flag? Well, that’s down to you – get creative!
