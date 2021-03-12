@@ -5,6 +5,6 @@ This is my second Swift project, code can be found in [ContentView.swift](https:
 
 ## Simulator
 <p align="left">
-  <img src="/Challenge%20Day/p1.png" width="30%" /> 
+  <img src="/Conversion/Challenge%20Day/p1.png" width="30%" /> 
 </p>
 
