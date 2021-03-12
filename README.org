@@ -1,4 +1,4 @@
-| \# | Project name | Code              | Screenshots      |
+| #  | Project name | Code              | Screenshots      |
 |----+--------------+-------------------+------------------|
 |  1 | WeSplit      | [[https://github.com/KristinnGodfrey/SwiftUI-Projects/blob/main/Conversion/Challenge%20Day/ContentView.swift][ContentView.swift]] | [[https://github.com/KristinnGodfrey/SwiftUI-Projects/blob/main/Conversion/Challenge%20Day/p1.png][1]]                |
 |  2 | Conversion   | [[https://github.com/KristinnGodfrey/SwiftUI-Projects/blob/main/Conversion/Challenge%20Day/ContentView.swift][ContentView.swift]] | [[https://github.com/KristinnGodfrey/SwiftUI-Projects/blob/main/Conversion/Challenge%20Day/p1.png][1]]                |
