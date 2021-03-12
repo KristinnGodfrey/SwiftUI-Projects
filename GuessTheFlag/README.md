@@ -4,11 +4,11 @@ This is my third Swift project, code can be found in [ContentView.swift](https:/
 
 ## Simulator
 <p align="left">
-  <img src="/p1.png" width="30%" /> 
+  <img src="/GuessTheFlag/p1.png" width="30%" /> 
 </p>
 <p align="left">
-  <img src="/p2.png" width="30%" /> 
-  <img src="/p3.png" width="30%" /> 
+  <img src="/GuessTheFlag/p2.png" width="30%" /> 
+  <img src="/GuessTheFlag/p3.png" width="30%" /> 
 </p>
 
 ## Extra
@@ -17,5 +17,5 @@ This is my third Swift project, code can be found in [ContentView.swift](https:/
 - [x] Make the other two buttons fade out to 25% opacity.
 - [ ] And if you tap on the wrong flag? Well, that’s down to you – get creative!
 <p align="left">
-  <img src="/p4.png" width="30%" /> 
+  <img src="/GuessTheFlag/p4.png" width="30%" /> 
 </p>

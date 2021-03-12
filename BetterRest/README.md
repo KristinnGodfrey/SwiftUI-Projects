@@ -5,8 +5,8 @@ This is my fifth Swift project, code can be found in [ContentView.swift](https:/
 
 ## Simulator
 <p align="left">
-  <img src="/p1.png" width="30%" /> 
-    <img src="/p2.png" width="30%" /> 
+  <img src="/BetterRest/p1.png" width="30%" /> 
+    <img src="/BetterRest/2.png" width="30%" /> 
 </p>
 
 ## Extra
@@ -15,6 +15,6 @@ This is my fifth Swift project, code can be found in [ContentView.swift](https:/
 - [x] Change the user interface so that it always shows their recommended bedtime using a nice and large font. You should be able to remove the “Calculate” button entirely.
 
 <p align="left">
-  <img src="/p3.png" width="30%" /> 
+  <img src="/BetterRest/p3.png" width="30%" /> 
 </p>
 # WordScramble

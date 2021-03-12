@@ -7,7 +7,7 @@ The code can be found in [ContentView.swift](https://github.com/KristinnGodfrey/
 
 ## Simulator
 <p align="left">
-  <img src="/p2.png" width="30%" /> 
+  <img src="/WeSplit/p2.png" width="30%" /> 
 </p>
 
 ## Extra
